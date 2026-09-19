@@ -1,0 +1,280 @@
+# PHP Programming Practices
+
+This README contains screenshots and explanations of PHP programming practices covered in **Web Application Development - PHP & MySQL**.
+
+---
+
+# Practice #1: Display Introduction
+
+## Screenshot Name
+
+`Display.png`
+
+## Description
+
+This practice demonstrates how to display text in PHP using the `echo` statement.
+
+### Code
+
+```php
+<?php
+
+// Display intro
+echo "<br> Welcome PHP";
+
+?>
+```
+
+### Output
+
+```text
+Welcome PHP
+```
+
+## Screenshot
+
+!(Display.png)
+
+---
+
+# Practice #2: Constant Variable
+
+## Screenshot Name
+
+`ConstantVariable.png`
+
+## Description
+
+This practice demonstrates how to create a constant variable using the `define()` function.
+
+### Code
+
+```php
+<?php
+
+// Constant variable
+define("AGE", 20);
+
+echo "Age is ", AGE;
+
+?>
+```
+
+### Output
+
+```text
+Age is 20
+```
+
+## Screenshot
+
+!(ConstantVariable.png)
+
+---
+
+# Practice #3: If-Else Statement
+
+## Screenshot Name
+
+`If Else.png`
+
+## Description
+
+This practice demonstrates how to use an `if-else` statement to make a decision based on a condition.
+
+### Code
+
+```php
+<?php
+
+// If else statement
+$Age = 20;
+
+if ($Age >= 18)
+    echo "Adult";
+else
+    echo "young";
+
+?>
+```
+
+### Explanation
+
+If the age is 18 or above, the program displays `Adult`. Otherwise, it displays `young`.
+
+### Output
+
+```text
+Adult
+```
+
+## Screenshot
+
+(If Else.png)
+
+---
+
+# Practice #4: If-Else if Statement
+
+## Screenshot Name
+
+`If Else if.png`
+
+## Description
+
+This practice demonstrates how to check multiple conditions using `if`, `elseif`, and `else`.
+
+### Code
+
+```php
+<?php
+
+// If else if statement
+$Grade = 90;
+
+if ($Grade >= 95)
+    echo "A+";
+elseif ($Grade >= 85)
+    echo "A";
+elseif ($Grade >= 80)
+    echo "B+";
+elseif ($Grade >= 75)
+    echo "B";
+elseif ($Grade >= 65)
+    echo "C+";
+elseif ($Grade >= 60)
+    echo "C";
+elseif ($Grade >= 50)
+    echo "Fail";
+else
+    echo "invalid grade";
+
+?>
+```
+
+### Explanation
+
+The program checks the grade from the highest condition to the lowest. Since the grade is `90`, the output is `A`.
+
+### Output
+
+```text
+A
+```
+
+## Screenshot
+
+!(If Else if.png)
+
+---
+
+# Practice #5: Switch Case Statement
+
+## Screenshot Name
+
+`Switch.png`
+
+## Description
+
+This practice demonstrates how to use a `switch-case` statement to select a result based on a value.
+
+### Code
+
+```php
+<?php
+
+// Switch case statement
+$Answer = "n";
+
+switch ($Answer) {
+
+    case($Answer == "y" || $Answer == "Y"):
+        echo "the answer was no";
+        break;
+
+    case($Answer == "n" || $Answer == "N"):
+        echo "the answer was yes";
+        break;
+
+    default:
+        echo "invalid answer";
+}
+
+?>
+```
+
+### Explanation
+
+The `$Answer` variable contains `n`. The matching case is executed and the program displays the corresponding message.
+
+### Output
+
+```text
+the answer was yes
+```
+
+## Screenshot
+
+!(Switch.png)
+
+---
+
+# Practice #6: Logical Operators
+
+## Screenshot Name
+
+`Logical operator.png`
+
+## Description
+
+This practice demonstrates the use of logical operators. The `&&` operator means **AND**, so both conditions must be true.
+
+### Code
+
+```php
+<?php
+
+// Logical Operators
+$Age = 22;
+$Grade = 90;
+
+if ($Age >= 20 && $Grade >= 90)
+    echo "very good";
+elseif ($Age >= 20 && $Grade >= 80)
+    echo "good";
+elseif ($Age >= 20 && $Grade >= 70)
+    echo "not bad";
+else
+    echo "invalid Number";
+
+?>
+```
+
+### Explanation
+
+The program checks both age and grade. Since the age is `22` and the grade is `90`, both conditions in the first `if` statement are true.
+
+### Output
+
+```text
+very good
+```
+
+## Screenshot
+
+!(Logical operator.png)
+
+---
+
+# Summary
+
+The practices demonstrate the following PHP concepts:
+
+1. **Echo** – Displays text in the browser.
+2. **Constant** – Creates a value that does not change.
+3. **If-Else** – Makes decisions using conditions.
+4. **If-Elseif** – Checks multiple conditions.
+5. **Switch-Case** – Selects a matching case.
+6. **Logical Operators** – Combines multiple conditions.
+
+These practices provide a basic foundation for PHP programming and web application development.
